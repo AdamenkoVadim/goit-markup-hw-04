@@ -5,6 +5,7 @@
     --black-txt-color:#212121;
     --description-color:#757575;
     --white-color:#FFFFFF;
+    --icons-color-noactive:#AFB1B8;
 }
 
 
@@ -344,11 +345,35 @@ address {
 }
 
 .team-position{
+    margin-bottom: 16px;
+
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     color: var(--description-color);
 }
+
+.socialmedia{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia-item:not(:first-child){
+    margin-left: 10px;
+}
+
+.socialmedia-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    outline: 1px solid coral;
+}
+
 
 /* footer */
 
