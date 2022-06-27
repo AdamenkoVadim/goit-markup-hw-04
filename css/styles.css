@@ -196,11 +196,15 @@ address {
     padding-top: 32px;
     padding-bottom: 32px;
 }
+.contact-icon{
+    margin-right: 10px;
+}
 
 .header-contact:hover,
 .header-contact:focus{
     color:var(--accent-color);
     cursor: pointer;
+    fill: var(--accent-color);
 }
 .section{
     padding-top: 94px;
@@ -209,9 +213,17 @@ address {
     /* main conteny */
 
 .hero{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #2F303A;
+    background-image: url(/images/Hero/Img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     text-align: center;
-    
+
+
     padding-top: 200px;
     padding-bottom: 280px;
 }
@@ -219,7 +231,7 @@ address {
 
 
 .hero-title{
-    background-color: #2F303A;
+    /*background-color: #2F303A;*/
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -258,6 +270,8 @@ address {
     margin-right: auto;
     border: none;   
 }
+
+
 
 /* about us */
 
@@ -354,6 +368,8 @@ address {
 }
 
 .socialmedia{
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 0;
     display: flex;
     justify-content: center;
@@ -363,7 +379,9 @@ address {
     margin-left: 10px;
 }
 
+
 .socialmedia-link{
+    color: var(--icons-color-noactive);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -371,7 +389,52 @@ address {
     height: 44px;
     background-color: var(--white-color);
     border-radius: 50%;
-    outline: 1px solid coral;
+}
+
+.socialmedia-link:hover,
+.socialmedia-link:focus{
+    color:var(--white-color);
+    background-color:var(--accent-color);
+}
+
+.socialmedia-icon{
+    fill: currentColor;
+}
+
+/* cliets */
+
+.clients-list{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.clients-item:not(:first-child){
+    margin-left: 30px;
+}
+
+.clients-logo-link{
+    color: var(--icons-color-noactive);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    background-color: var(--white-color);
+    border-radius: 1%;
+    outline: 1px solid var(--icons-color-noactive)
+
+}
+
+.clients-logo-link:hover,
+.clients-logo-link:focus{
+    color:var(--accent-color);
+    outline: 1px solid var(--accent-color)
+}
+.clieny-logo-icon{
+    fill: currentColor;
 }
 
 
@@ -408,7 +471,7 @@ address {
 /* contacts */
 
 .footer-list{
-    display: block;
+    display: inline-block;
 }
 
 .footer-item{
@@ -438,6 +501,42 @@ address {
     color: var(--accent-color);
     cursor: pointer;
 }
+
+.footer-socialmedia{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.futer-socialmedia-item:not(:first-child){
+    margin-left: 10px;
+}
+
+.footer-socialmedia-link{
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);;
+    border-radius: 50%;
+}
+
+.footer-socialmedia-link:hover,
+.footer-socialmedia-link:focus{
+    color:var(--white-color);
+    background-color:var(--accent-color);
+}
+
+.footer-socialmedia-icon{
+    fill: currentColor;
+}
+
+
 
 /* Portfolio page*/
 
