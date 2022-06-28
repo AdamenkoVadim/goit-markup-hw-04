@@ -217,7 +217,7 @@ address {
     margin-left: auto;
     margin-right: auto;
     background-color: #2F303A;
-    background-image: url(/images/Hero/Img.png);
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Hero/Img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -303,6 +303,21 @@ address {
     
     text-align: left;
     margin-bottom: 0;
+}
+.about-icon-item{
+    color: var(--icons-color-noactive);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    outline: 1px solid #F5F4FA;
+    margin-bottom: 30px;
+}
+.about-icon{
+    fill: currentColor;
 }
 
 /* about us section 2 */
@@ -395,6 +410,7 @@ address {
 .socialmedia-link:focus{
     color:var(--white-color);
     background-color:var(--accent-color);
+    cursor: pointer;
 }
 
 .socialmedia-icon{
@@ -431,7 +447,8 @@ address {
 .clients-logo-link:hover,
 .clients-logo-link:focus{
     color:var(--accent-color);
-    outline: 1px solid var(--accent-color)
+    outline: 1px solid var(--accent-color);
+    cursor: pointer;
 }
 .clieny-logo-icon{
     fill: currentColor;
@@ -469,6 +486,9 @@ address {
 }
 
 /* contacts */
+.footeradress{
+    display: flex;
+}
 
 .footer-list{
     display: inline-block;
@@ -502,6 +522,27 @@ address {
     cursor: pointer;
 }
 
+.footer-adress{
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.footer-icon{
+    display: inline-block;
+    align-items: center;
+    margin-left: 70px;
+    padding-top: 15px;
+    width: 206px;
+}
+
+.footer-title{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
 .footer-socialmedia{
     margin-top: 0;
     margin-bottom: 0;
@@ -530,6 +571,7 @@ address {
 .footer-socialmedia-link:focus{
     color:var(--white-color);
     background-color:var(--accent-color);
+    cursor: pointer;
 }
 
 .footer-socialmedia-icon{
