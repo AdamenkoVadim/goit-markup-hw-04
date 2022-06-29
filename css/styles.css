@@ -89,6 +89,10 @@ address {
 
 /* header */
 
+.header{
+    border: 1px solid #ECECEC;
+}
+
 .header-item{
     font-weight: 500;
     font-size: 14px;
@@ -169,11 +173,7 @@ address {
 .header-item-contact:last-child{
     margin: 0;
 }
-/*
-.header-nav{
-    padding-top: 32px;
-    padding-bottom: 32px;
-}*/
+
 .header-link-item{
     margin-right: 50px;
 }
@@ -188,6 +188,8 @@ address {
 }
 
 .header-contact{
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -225,7 +227,7 @@ address {
 
 
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 }
 
 
@@ -268,9 +270,12 @@ address {
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
-    border: none;   
-}
+    border: none;
+    }
 
+.button-order:hover{
+    outline: auto;
+}
 
 
 /* about us */
@@ -488,6 +493,7 @@ address {
 /* contacts */
 .footeradress{
     display: flex;
+    align-items: baseline;
 }
 
 .footer-list{
@@ -531,8 +537,6 @@ address {
     display: inline-block;
     align-items: center;
     margin-left: 70px;
-    padding-top: 15px;
-    width: 206px;
 }
 
 .footer-title{
@@ -618,6 +622,8 @@ address {
     background-color: var(--accent-color);
     color: white;
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .filter-title{
@@ -637,6 +643,15 @@ address {
 }
 
 /* filter result */
+.filter-result-link{
+    display: block;
+}
+
+.filter-result-link:hover,
+.filter-result-link:focus {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+   cursor: pointer;
+}
 
 .filter-list{
     padding:0;
